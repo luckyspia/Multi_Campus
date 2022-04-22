@@ -1,2 +1,2 @@
-# Multi_Campus
+# Multi_Campus(ML)
 Machine Learning lecture
