@@ -1,5 +1,6 @@
 .iypnb_checkpoints
 chromedriver.exe
+kaggle.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
