@@ -1,4 +1,5 @@
-### 함수 선언부
+#### Function
+
 def add_data(friend):
     katok.append(None)
     kLen = len(katok)
@@ -24,12 +25,12 @@ def delete_data(position):
 
     del(katok[kLen-1])
 
-### 전역 변수부
+#### Global Variable
+
 katok = []
 select = -1
 
-
-### 메인 코드부
+#### Main
 while (select !=4):
 
     select = int(input("선택하세요(1: 추가, 2: 삽입, 3: 삭제, 4: 종료)----->"))
