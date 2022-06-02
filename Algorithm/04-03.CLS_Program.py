@@ -44,6 +44,24 @@ def insertNode(findData, insertData):
     memory.append(node)
     return
 
+def deleteNode(deleteData):
+    global memory, head, pre, current
+    # 첫 노드를 삭제
+    if deleteData == head.data:
+        current = head
+        head = head.link
+        del(current)
+        return
+    # 두 번째 이후 노드 삭제
+    current = head
+    while current.link != None:
+        pre = current
+        current = current.link
+        if current.data == deleteData:
+            pre.link = current.link
+            del(current)
+            return
+
 #### Global Variable
 
 memory = []
@@ -76,4 +94,10 @@ printNodes(head)
 # printNodes(head)
 
 # insertNode('재남', '문별')
+# printNodes(head)
+
+# deleteNode('다현')
+# printNodes(head)
+
+# deleteNode('쯔위')
 # printNodes(head)
